@@ -1,0 +1,8 @@
+# Python virtual environment
+.venv/
+
+# Editor settings
+.vscode
+
+# Environment variables containing credentials
+env.lua
