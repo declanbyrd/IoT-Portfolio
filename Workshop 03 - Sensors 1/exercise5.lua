@@ -1,3 +1,6 @@
+--[[
+  [OPTIONAL] Read SR501 sensor
+--]]
 sensorPin = 6
 gpio.mode(sensorPin, gpio.INPUT)
 sensorTimer = tmr.create()
