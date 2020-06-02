@@ -34,10 +34,10 @@ function setMode(socket, data)
 
   if string.find(data, "GET /LED_ON") then
     htmlUpdate(socket, true)
-    gpio.write(pinLed, gpio.HIGH)
+    gpio.write(pinLed, gpio.LOW)
   elseif string.find(data, "GET / ") or string.find(data, "GET /LED_OFF") then
     htmlUpdate(socket, false)
-    gpio.write(pinLed, gpio.LOW)
+    gpio.write(pinLed, gpio.HIGH)
   else
     socket:send("<h2>Error, no matched string has been found!</h2>")
     socket:on(
